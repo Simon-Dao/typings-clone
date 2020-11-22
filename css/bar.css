@@ -1,0 +1,32 @@
+#bar {
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#typing-info {
+    display: flex;
+    font-size: 10px;
+}
+
+#word-count-buttons {
+    display: flex;
+}
+
+#buttons {
+    display: flex;
+}
+
+#buttons h1 {
+    position: relative;
+    bottom: 2px;
+    font-size: 20px;
+}
+
+.word-count-button {
+    font-size: 20px;
+    background-color: rgb(26, 26, 26);
+    border: none;
+    color: whitesmoke;
+}

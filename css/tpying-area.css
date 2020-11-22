@@ -1,0 +1,43 @@
+#typing-area {
+    background-color: rgb(51, 51, 51);
+    border-radius: 6px;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#typing-input-area {
+    display: flex;
+    font-size: 20px;
+}
+
+#text {
+    font-size: 25px;
+    word-wrap: break-word;
+}
+
+#redo-button {
+    border: none;
+    border-radius: 6px;
+
+    width: 100px;
+    height: 41px;
+
+    background-color: rgb(26, 26, 26);
+    margin-left: 20px;
+    margin-top: 10px;
+
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+#typing-bar {
+    border: none;
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(26, 26, 26);
+    border-radius: 6px;
+    padding-left: 23px;
+    color: whitesmoke;
+    font-size: 23px;
+}
