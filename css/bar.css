@@ -1,7 +1,7 @@
 #bar {
     color: whitesmoke;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin-bottom: 10px;
 }
 

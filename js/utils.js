@@ -8,23 +8,27 @@ function reset() {
     //clear input field
     textInput.value = '';
 
-    let count = 0;
+    let index = 0;
 
     //generate text
-    for(let i = 0; i<wordCount; i++) {
         
-        let word = generateWord();
-        for(let j = 0; j<word.length; j++) {
-            let char = document.createElement('span');
-            char.innerHTML = word.charAt(j);
-            char.id = 'letter-'+count;
-            textDisplay.appendChild(char);
-            
-            count++;
-        }
+    let paragraph = getParagraph();
+
+
+    for(let j = 0; j<paragraph.length; j++) {
+        let char = document.createElement('span');
+        char.innerHTML = paragraph.charAt(j);
+        char.id = 'letter-'+index;
+        textDisplay.appendChild(char);
+        
+        index++;
     }
 }
 
-function generateWord() {
-    return 'hello ';
+function getParagraph() {
+    return paragraphList[getRandomNumberBetween(0,paragraphList.length)];
+}
+
+function getRandomNumberBetween(min,max){
+    return Math.floor(Math.random()*((max-1)-min+1)+min);
 }

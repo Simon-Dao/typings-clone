@@ -7,9 +7,8 @@ let keyCount = 0;
 let wordCount = 25;
 let checkPoint = 0;
 let count = 0;
-//todo make a random word generator
-//calculate wpm and accuracy
 
+//calculate wpm and accuracy
 reset();
 setButtonHandlers();
 setKeyHandlers();
