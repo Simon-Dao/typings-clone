@@ -33,8 +33,8 @@ function generateText() {
 }
 
 function getParagraph() {
-    //return paragraphList[getRandomNumberBetween(0, paragraphList.length)];
-    return "hello my name is simon";
+    return paragraphList[getRandomNumberBetween(0, paragraphList.length)];
+    //return "hello my name is simon";
 }
 
 function getRandomNumberBetween(min, max) {
