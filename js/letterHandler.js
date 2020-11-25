@@ -17,10 +17,12 @@ function setKeyHandlers() {
 function handleLetters(inputKey, currentLetter) {
     const isOverTextLength = keyCount < textDisplay.children.length;
 
-    if(inputKey == currentLetter.innerText && isOverTextLength)
+    if(inputKey == currentLetter.innerText && isOverTextLength) {
         currentLetter.style.color = 'green';
-    else 
+    } else {
         currentLetter.style.color = 'red';
+        errorCount++;
+    }
 }
 
 function handleSpaces(inputKey, currentLetter) {

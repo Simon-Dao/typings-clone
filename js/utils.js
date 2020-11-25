@@ -1,34 +1,42 @@
 function reset() {
-    //remove all spans from text display
-    textDisplay.innerHTML = '';
 
     keyCount = 0;
     checkPoint = 0;
+    isStarting = false;
+    errorCount = 0;
+
+    generateText();
 
     //clear input field
     textInput.value = '';
+}
 
+function generateText() {
+
+    textDisplay.innerHTML = '';
+    wpm.innerHTML = 'XX/';
+    acc.innerHTML = ' XX';
+
+    //generate text        
     let index = 0;
-
-    //generate text
-        
     let paragraph = getParagraph();
+    textLength = paragraph.length;
 
-
-    for(let j = 0; j<paragraph.length; j++) {
+    for (let j = 0; j < paragraph.length; j++) {
         let char = document.createElement('span');
         char.innerHTML = paragraph.charAt(j);
-        char.id = 'letter-'+index;
+        char.id = 'letter-' + index;
         textDisplay.appendChild(char);
-        
+            
         index++;
     }
 }
 
 function getParagraph() {
-    return paragraphList[getRandomNumberBetween(0,paragraphList.length)];
+    //return paragraphList[getRandomNumberBetween(0, paragraphList.length)];
+    return "hello my name is simon";
 }
 
-function getRandomNumberBetween(min,max){
-    return Math.floor(Math.random()*((max-1)-min+1)+min);
+function getRandomNumberBetween(min, max) {
+    return Math.floor(Math.random() * ((max - 1) - min + 1) + min);
 }
