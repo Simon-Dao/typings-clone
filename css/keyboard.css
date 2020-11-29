@@ -1,0 +1,12 @@
+#keyboard-container {
+    justify-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+    width: 60%;
+}
+
+.key {
+    margin-right: 2px;
+    margin-bottom: 2px;
+}

@@ -46,9 +46,6 @@ function calculateWPM(time) {
     //adjusted speed the user typed with errors
     const netWPM = Math.floor(grossWPM - (errorCount/time));
 
-    console.log(netWPM);
-    console.log(time);
-
     return netWPM < 0 ? 0 : netWPM;
 }
 

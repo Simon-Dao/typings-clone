@@ -21,7 +21,7 @@ body {
 }
 
 #header {
-    margin-bottom: 20vh;
+    margin-bottom: 10vh;
 }
 
 #typings-text {
@@ -36,6 +36,21 @@ body {
     margin-top: 20px;
 }
 
-#themes-text {
+#error-button {
+    text-decoration: underline;
     font-size: 25px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(26, 26, 26);
+    color: whitesmoke;
+    opacity: 0.5;
+    transition: 0.1s ease-in-out;
+}
+
+#error-button:hover {
+    opacity: 1;
+}
+
+#error-button:focus {
+    outline: none;
 }

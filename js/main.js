@@ -4,6 +4,8 @@ const redoButton = document.querySelector('#redo-button');
 const wordCountButtons = document.querySelectorAll('.word-count-button');
 const wpm = document.querySelector('#wpm');
 const acc = document.querySelector('#acc');
+const alphebet = 'abcdefghijklmnopqrstuvwxyz';
+let keyMap;
 
 //global variables
 let textLength = textDisplay.children.length;
@@ -12,6 +14,7 @@ let keyCount = 0;
 let checkPoint = 0;
 let count = 0;
 let errorCount = 0;
+let timesMapPressed = 0;
 
 //calculate wpm and accuracy
 reset();
@@ -19,3 +22,4 @@ setButtonHandlers();
 setKeyHandlers();
 prepareTimer();
 setBackSpaceHandler();
+setkeyBoardElement();

@@ -22,6 +22,15 @@ function handleLetters(inputKey, currentLetter) {
     } else {
         currentLetter.style.color = 'red';
         errorCount++;
+
+        let cur = currentLetter.innerText.toLowerCase();
+
+        if(cur.toUpperCase() != cur.toLowerCase()) {
+            
+            keyMap[cur] = keyMap[cur] + 1;
+            
+            document.querySelector(`#key-${cur}`).style.backgroundColor = `rgb(${keyMap[cur]*70},${255 - keyMap[cur]*70},0)`;
+        }
     }
 }
 
