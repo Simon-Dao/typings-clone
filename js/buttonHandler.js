@@ -4,10 +4,9 @@ function setButtonHandlers() {
         reset();
     });
 
-    wordCountButtons.forEach((button)=> {
+    wordSwitchButton.forEach((button)=> {
         button.addEventListener('click', () => {
-
-            wordCount = parseInt(button.value);
+            isEasyText = !isEasyText;
             reset();
         });
     });

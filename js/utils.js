@@ -20,7 +20,7 @@ function generateText() {
 
     //generate text        
     let index = 0;
-    let paragraph = getParagraph();
+    let paragraph = isEasyText ? getEasyParagraph() : getHardParagraph();
     textLength = paragraph.length;
 
     for (let j = 0; j < paragraph.length; j++) {
@@ -33,8 +33,17 @@ function generateText() {
     }
 }
 
-function getParagraph() {
+function getHardParagraph() {
     return paragraphList[getRandomNumberBetween(0, paragraphList.length)];
+}
+
+function getEasyParagraph() {
+    let result = '';
+    
+    for(let i = 0; i<50; i++) 
+        result += english[getRandomNumberBetween(0, 50)]+' ';
+    
+    return result;
 }
 
 function getRandomNumberBetween(min, max) {

@@ -21,7 +21,7 @@ function handleLetters(inputKey, currentLetter) {
         currentLetter.style.color = 'green';
     } else {
         currentLetter.style.color = 'red';
-        errorCount++;
+        errorCount+= .3;
 
         let cur = currentLetter.innerText.toLowerCase();
 
